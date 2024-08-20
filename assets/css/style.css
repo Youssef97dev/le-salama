@@ -1183,6 +1183,11 @@ body.nav-active {
   #MENU
 \*-----------------------------------*/
 
+.menu .abs-img {
+  margin-inline: auto;
+  margin-block-end: 12px;
+}
+
 .menu .section-title {
   margin-block-end: 40px;
 }
@@ -1981,7 +1986,7 @@ textarea.input-field {
    */
 
   .about .container {
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: 1fr 0.8fr;
     gap: 30px;
   }
 
@@ -2026,6 +2031,12 @@ textarea.input-field {
   .menu .grid-list {
     position: relative;
     column-gap: 90px;
+  }
+
+  .menu .abs-img {
+    position: absolute;
+    top: 0;
+    left: -40px;
   }
 
   /**
