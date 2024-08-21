@@ -382,6 +382,20 @@ body.nav-active {
   z-index: 1;
 }
 
+.btn-menu {
+  position: relative;
+  color: var(--gold-crayola);
+  font-size: var(--fontSize-label-2);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-5);
+  max-width: max-content;
+  border: 2px solid var(--gold-crayola);
+  padding: 12px 45px;
+  overflow: hidden;
+  z-index: 1;
+}
+
 .btn::before {
   content: "";
   position: absolute;
@@ -1200,6 +1214,14 @@ body.nav-active {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+}
+
+.item-expand {
+  display: flex;
+}
+
+.item-shrink {
+  display: none;
 }
 
 .hover\:card .card-banner {
