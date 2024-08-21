@@ -135,13 +135,20 @@ window.addEventListener("mousemove", function (event) {
  */
 
 // Get Element From DOM
-const btns = document.querySelectorAll(".grid-list li button");
+const btns = document.querySelectorAll(".filter-buttons li button");
 const items = document.querySelectorAll(".grid-list .menu-card");
 
 // Add Click Event to all buttons
-for (let i = 1; i < btns.length; i++) {
+for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", filterItem);
 }
+// Add Load Event Listener
+window.addEventListener("load", () => {
+  // Trigger initial filter
+  if (btns.length > 0) {
+    filterItem({ target: btns[0] });
+  }
+});
 
 // Set active button on click
 function setActiveBtn(e) {
@@ -174,13 +181,12 @@ function filterItem(e) {
       item.classList.add("item-shrink");
     }
   });
-
-  btns[0].addEventListener("click", (e) => {
-    setActiveBtn(e);
-    items.forEach((item) => {
-      item.classList.remove("item-shrink");
-      item.classList.add("item-expand");
-    });
-  });
   console.log(items.length);
 }
+
+document.getElementById("downloadMenu").addEventListener("click", function () {
+  link.download = "your-file.pdf"; // This will be the name of the downloaded file
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
