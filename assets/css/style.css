@@ -471,6 +471,13 @@ body.nav-active {
   background-color: var(--smoky-black-2);
 }
 
+.bg-parallax-1 {
+  background: url("../images/parallax-1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .grid-list {
   display: grid;
   gap: 40px;
