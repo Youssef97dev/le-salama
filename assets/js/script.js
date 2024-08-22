@@ -183,10 +183,3 @@ function filterItem(e) {
   });
   console.log(items.length);
 }
-
-document.getElementById("downloadMenu").addEventListener("click", function () {
-  link.download = "your-file.pdf"; // This will be the name of the downloaded file
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-});
