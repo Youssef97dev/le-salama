@@ -22,7 +22,7 @@ images.forEach((item, i) => {
 const updateImage = (i) => {
   let path = `./assets/gallery/salama${i + 1}.jpg`;
   largeImage.src = path;
-  imageName.innerHTML = path;
+  imageName.innerHTML = `Le Salama ${i + 1}`;
   imageIndex.innerHTML = `0${i + 1}`;
   index = i;
 };
