@@ -1653,6 +1653,19 @@ textarea.input-field {
  * responsive for larger than 575px screen
  */
 
+@media (min-width: 320px) {
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+
+  .filter-buttons li button {
+    width: 100%;
+  }
+}
+
 @media (min-width: 575px) {
   /**
    * CUSTOM PROPERTY
