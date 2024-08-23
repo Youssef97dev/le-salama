@@ -9,6 +9,7 @@ const largeImage = document.querySelector(".large-image");
 const imageIndex = document.querySelector(".index");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
+const lang = document.documentElement.lang;
 
 let index = 0; // will track our current image;
 
@@ -20,7 +21,10 @@ images.forEach((item, i) => {
 });
 
 const updateImage = (i) => {
-  let path = `./assets/gallery/salama${i + 1}.jpg`;
+  let path =
+    lang === "en"
+      ? `./assets/gallery/salama${i + 1}.jpg`
+      : `../assets/gallery/salama${i + 1}.jpg`;
   largeImage.src = path;
   imageName.innerHTML = `Le Salama ${i + 1}`;
   imageIndex.innerHTML = `0${i + 1}`;
