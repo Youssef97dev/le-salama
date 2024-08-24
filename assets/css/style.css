@@ -2437,3 +2437,35 @@ textarea.input-field {
     left: 0;
   }
 }
+.accordion {
+  background-color: var(--gold-crayola);
+  margin-top: 3rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 13px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: var(--eerie-black-1);
+  color: white;
+  border: 1px solid var(--gold-crayola);
+}
+
+.panel {
+  margin-top: 10px;
+  padding: 0 18px;
+  background-color: var(--black-alpha-15);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 13px;
+}
