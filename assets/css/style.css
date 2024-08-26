@@ -267,6 +267,10 @@ body.nav-active {
   font-size: var(--fontSize-title-2);
 }
 
+.title-price {
+  font-size: var(--fontSize-title-price);
+}
+
 .title-3 {
   font-size: var(--fontSize-title-3);
 }
@@ -2184,6 +2188,7 @@ textarea.input-field {
      */
 
     --fontSize-title-2: 2.5rem;
+    --fontSize-title-price: 1.9rem;
   }
 
   /**
