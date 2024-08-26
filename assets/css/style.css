@@ -2022,7 +2022,6 @@ textarea.input-field {
   :is(.service, .event, .menu) .grid-list {
     grid-template-columns: repeat(3, 1fr);
   }
-
   :is(.menu) .grid-list {
     grid-template-columns: repeat(3, 1fr);
   }
